@@ -1,0 +1,25 @@
+/* main.css for global classes */
+:root {
+  --primary-clr: #f9f7f7;
+  --secondary-clr: rgb(213, 221, 231);
+  --accent-clr: #3f72af;
+  --accent2-clr: #112d4e;
+  --txt-blue: #3f72af;
+}
+
+body {
+  text-align: center;
+  background: var(--primary-clr);
+}
+
+.container {
+  min-height: 50vh;
+}
+
+.module {
+  background: var(--secondary-clr);
+}
+
+.white-module {
+  background: white;
+}
