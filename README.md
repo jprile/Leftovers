@@ -1,4 +1,4 @@
-# CSE5914Leftovers
+# Leftovers
 
 ## How to start the Flask app with Elastic Search (updated 3/25/24)
 Prerequisites:
@@ -6,7 +6,7 @@ Prerequisites:
   
 1. Download, pull, or clone the repository
 2. Start your docker container running elastic search
-3. run "docker cp es01:/usr/share/elasticsearch/config/certs/http_ca.crt ." in the CSE5914LEFTOVERS directory, which copies the http certification to the directory.
+3. run "docker cp es01:/usr/share/elasticsearch/config/certs/http_ca.crt ." in the LEFTOVERS directory, which copies the http certification to the directory.
      **note, my container is called "es01". Change yours accordingly.
 5. Open config.py
 6. Copy the password from your docker container (listed under "Password for the elastic user" in the container logs).
@@ -45,10 +45,10 @@ env\Scripts\activate.bat
 From the venv terminal, run:
 
 docker build --tag python-docker . 
-### This creates an image called python-docker based on the included Dockerfile in the specified directory ( . in this case, if you are in the CSE5914Leftovers direcotry)
+### This creates an image called python-docker based on the included Dockerfile in the specified directory ( . in this case, if you are in the Leftovers directory)
 
 docker run -dp 5000:5000 python-docker 
-### This starts a container built from the docker image we just made. -d makes it run in the browser. -p 5000:5000 maps Docker port 5000 to our local port 5000.
+### This starts a container built from the docker image I just made. -d makes it run in the browser. -p 5000:5000 maps Docker port 5000 to our local port 5000.
 
 You should get a hash-looking string after running the command. Then in your browser, go to localhost:5000.
 If all went well, you will see a header.
